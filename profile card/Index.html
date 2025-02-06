@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="fontawesome-free-6.7.2-web/js/all.js"></script>
+</head>
+<body>
+  <div class="profile-card" id="profileCard">
+    <p data-testid="currentLocation" style="text-align: start; margin: 0;" class="location"><i class="fa-solid fa-location-dot"></i>Nigeria  <span id="time" data-testid="currentTimeUTC" class="time"></span></p>
+   
+    <div class="profile-image" data-testid="profilePicture">
+      <img src="img/IMG_2604-modified.png" alt="Profile Picture">
+    </div>
+    <div class="profile-info">
+      <h3 data-testid="fullName">Tijani Mustapha Ayomide <span data-testid="emailAddress" style="font-weight: lighter; font-size: 10px;"><i>tijaniyomide@gmail.com</i></span></h3>
+      <p data-testid="jobTitle">Web Developer | Designer | Tech Enthusiast</p>
+      <div class="bio-container" style="margin: 20px;">
+        <p id="bio-text" data-testid="shortBio" style="display: none;">Hello! I'm a passionate web developer with a love for creating interactive and user-friendly websites. I specialize in HTML, CSS, and JavaScript, and I'm always eager to learn new technologies.</p>
+        <span id="toggle-button" class="button">About me
+          <span><i class="fa-solid fa-angle-right fa-rotate-90 "></i></span></span>
+    </div>
+      <div class="sociallinks" data-testid="socialLinks">
+         <a href="https://www.linkedin.com/in/tijani-mustapha-5504972b0/" target="_blank"><i class="fa-brands fa-linkedin fa-shake fa-2xl"></i></a> 
+         <a href="https://x.com/mustynova" target="_blank"><i class="fa-brands fa-square-twitter fa-shake fa-2xl"></i></a>
+         <a href="https://github.com/Mustechhub" target="_blank"><i class="fa-brands fa-github fa-shake fa-2xl"></i></a>
+      </div>
+    </div>
+    <button id="themeToggle">Toggle Theme</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
